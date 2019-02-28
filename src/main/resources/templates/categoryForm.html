@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+                layout:decorate="/layout/masterAdmin.html">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Form</title>
+</head>
+<body>
+    <div layout:fragment="context">
+        <form action="#" th:action="@{/category/creation}" th:object="${category}" method="post">
+         <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text"
+                   th:field="*{name}"
+                   class="form-control" name="" id="name" aria-describedby="helpId" placeholder="">
+         </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+</html>

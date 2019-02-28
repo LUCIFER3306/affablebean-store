@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+                layout:decorate="/layout/master.html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div layout:fragment="master">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                The author wishes to express gratitude to Dr. Thein Gi, Rector, Technological University (Thanlyin) for her general guidance during the long period of study.
+                The author would humbly like to thank Chairman Dr. Ei Ei Myat, Professor and Head Department of Information Technology, Technological University (Thanlyin), for her patient guidance, invaluable assistance and encouragement.
+                The author also wishes to extend special thanks to supervisor Daw Myat thida Tun, Lecturer, Department of Information Technology, Technological University (Thanlyin), for her encouragement, helpful suggestions, true-line guidance, supervision and editing this graduation thesis.
+                Dr. Htight Htight Wai, Associate Professor, department of Information Technology, Technological University (Thanlyin), Dr. Khin Moh Moh Aung, Lecturer, Department of Information Technology, Technological University (Thanlyin), and Daw Khin War War Htike, Lecturer, Department of  Information Technology, Technological University (Thanlyin), for their skillful guidance, supervision and valueable advice though the development of this graduating thesis.
+                The author particularly wishes to acknowledge his sincere appreciation and thanks to all his teachers for their guidance during the long period of study.
+                The author wishes to express his special thanks to his parents and relatives who specially offered strong moral and physical support, care and kindness during the year of his graduation study.
+                And finally, the author would like to extend his thanks to all his colleagues for their contribution and supports in making this graduating thesis.
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" th:href="@{/products/category/bakery}"><img src="#" th:src="@{/img/categories/bakery.jpg}" class="card-img"/></a>
+                        </div>
+                        <div class="col">
+                            <a href="#" th:href="@{products/category/dairy}"><img src="#" th:src="@{/img/categories/dairy.jpg}" class="card-img"/></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" th:href="@{/products/category/fruit & veg}"><img src="#" th:src="@{/img/categories/fruit & veg.jpg}" class="card-img"/></a>
+                        </div>
+                        <div class="col">
+                            <a href="#" th:href="@{/products/category/meats}"><img src="#" th:src="@{/img/categories/meats.jpg}" class="card-img"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="/layout/masterAdmin.html">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Lists-</title>
+</head>
+<body>
+    <div layout:fragment="context">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="ca:${categorys}">
+                    <td><img th:src="@{'../img/categories/'+${ca.name}+'.jpg'}" alt=""></td>
+                    <td th:text="${ca.name}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/affablebean.css" th:href="@{/css/affablebean.css}" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div id="header">
+        <img src="#" th:src="@{/img/logo.png}" id="logo"/>
+        <img src="#" th:src="@{/img/logoText.png}" id="logoText"/>
+    </div>
+    <div>
+        <div layout:fragment="master"></div>
+    </div>
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> jdc.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>
